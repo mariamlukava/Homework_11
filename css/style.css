@@ -1,0 +1,204 @@
+:root {
+    --header-font-size: 24px;
+    --aside-title-font-size: 16px;
+    --aside-list-font-size: 14px;
+    --price-font-size: 16px;
+    --button-font-size: 14px;
+    --header-color: #DFD9D9;
+    --aside-title-color: #C3B97F;
+    --aside-color: #91B599;
+    --price-color: #1C5550;
+    --user-button-color: #91B599;
+    --cart-button-color: #C3B97F;
+    --card-button-color: #DFD9D9;
+    --main-bg-color: #1C5550;
+    --header-button-bg-color: #00000033;
+    --aside-bg-color: #00000033;
+    --card-button-bg-color: #C3B97F;
+    --card-section-bg-color: #DFD9D9;
+    --header_button_border_radius: 4px;
+}
+
+.container {
+    width: min(100% 1440px);
+    margin: auto;
+    padding: 32px 20px;
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px 146px 146px 220px;
+    gap: 48px 40px;
+    grid-template-areas:
+        "HEADER HEADER HEADER HEADER"
+        "ASIDE SECTION1 SECTION1 SECTION2"
+        "ASIDE SECTION1 SECTION1 SECTION3"
+        "CARD1 CARD2 CARD3 CARD4";
+}
+
+/* header */
+header {
+    /* background-color: cyan; */
+    grid-area: HEADER;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_ul {
+    display: flex;
+    column-gap: 80px;
+}
+
+.header_ul a {
+    font-family: "Inter", sans-serif;
+    font-size: var(--header-font-size);
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--header-color);
+}
+
+.user_button,
+.cart_button {
+    width: 32px;
+    height: 32px;
+    background-color: var(--header-button-bg-color);
+    border: none;
+    border-radius: var(--header_button_border_radius);
+    box-shadow: 0px 2px 4px -2px #DFD9D966 inset, 0px 2px 4px #00000033;
+}
+
+.user_button {
+    color: var(--user-button-color);
+}
+
+.cart_button {
+    color: var(--cart-button-color);
+}
+
+/* aside */
+aside {
+    background-color: var(--aside-bg-color);
+    grid-area: ASIDE;
+    padding: 38px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    box-shadow: 0px 4px 4px #00000033 inset, 0px -1px 4px #DFD9D966 inset;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: var(--aside-title-font-size);
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--aside-title-color);
+}
+
+.aside_ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.aside_ul a {
+    font-family: "Inter", sans-serif;
+    font-size: var(--aside-list-font-size);
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--aside-color);
+}
+
+/* section1 */
+.section1 {
+    /* background-color: chartreuse; */
+    grid-area: SECTION1;
+}
+
+.section1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* section2 */
+.section2 {
+    /* background-color: chocolate; */
+    grid-area: SECTION2;
+}
+
+.section2 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* section3 */
+.section3 {
+    /* background-color: blue; */
+    grid-area: SECTION3;
+}
+
+.section3 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* cards */
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article img {
+    width: 100%;
+}
+
+.card_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    background-color: var(--card-section-bg-color);
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: var(--price-font-size);
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--price-color);
+}
+
+.card_button {
+    border: none;
+    width: 97px;
+    height: 40px;
+    background-color: var(--card-button-bg-color);
+    color: var(--card-button-color);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* card1 */
+.card1 {
+    /* background-color: darkgreen; */
+    grid-area: CARD1;
+}
+
+/* card2 */
+.card2 {
+    /* background-color: palevioletred; */
+    grid-area: CARD2;
+}
+
+/* card3 */
+.card3 {
+    /* background-color: lightseagreen; */
+    grid-area: CARD3;
+}
+
+/* card4 */
+.card4 {
+    /* background-color: deeppink; */
+    grid-area: CARD4;
+}
