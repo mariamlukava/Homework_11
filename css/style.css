@@ -1,23 +1,4 @@
-:root {
-    --header-font-size: 24px;
-    --aside-title-font-size: 16px;
-    --aside-list-font-size: 14px;
-    --price-font-size: 16px;
-    --button-font-size: 14px;
-    --header-color: #DFD9D9;
-    --aside-title-color: #C3B97F;
-    --aside-color: #91B599;
-    --price-color: #1C5550;
-    --user-button-color: #91B599;
-    --cart-button-color: #C3B97F;
-    --card-button-color: #DFD9D9;
-    --main-bg-color: #1C5550;
-    --header-button-bg-color: #00000033;
-    --aside-bg-color: #00000033;
-    --card-button-bg-color: #C3B97F;
-    --card-section-bg-color: #DFD9D9;
-    --header_button_border_radius: 4px;
-}
+@import url(variable.css);
 
 .container {
     width: min(100% 1440px);
