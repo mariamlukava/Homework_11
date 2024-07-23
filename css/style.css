@@ -1,4 +1,4 @@
-@import url(variable.css);
+@import url(variables.css);
 
 .container {
     width: min(100% 1440px);
